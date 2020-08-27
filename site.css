@@ -22,7 +22,6 @@ body {
   background-color: white;
   border-radius: 2rem;
   min-width: 40rem;
-  height: 50vh;
 }
 
 .meals-eaten {
@@ -85,9 +84,19 @@ img {
   max-width: 350px;
 }
 
-@media only screen and (max-width: 600px) {
+/* pesky iPhone 8 */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2), {
+  .grid-wrapper {
+    height: -webkit-fit-content;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
   body {
     margin: 0rem;
+  }
+  img {
+    max-width: 150px;
   }
   .grid-wrapper {
     display: flex;
@@ -98,5 +107,11 @@ img {
   }
   button {
     margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  .grid-wrapper {
+    height: -webkit-fit-content;
   }
 }
