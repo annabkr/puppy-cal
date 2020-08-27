@@ -1,5 +1,5 @@
 # puppy-time
-An activity and lifestyle tracker web app for dogs.
+An activity and lifestyle tracker app for dogs.
 
 Playing around with Vanilla JS for fun, since I spend most of my time using frameworks.
 
