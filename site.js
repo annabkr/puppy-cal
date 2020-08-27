@@ -1,18 +1,12 @@
-const renderButtons = () => {
-  const names = ["Meals", "Weight", "Exercise"];
+const meals = Array();
 
-  for (const i in names) {
-    console.log(`Creating button with name: ${names[i]}`);
-    renderButton(names[i]);
-  }
+meals.push("Kibble");
+
+const onClickMeals = () => {
+  let element = document.getElementById("content");
+  element.innerHTML = `
+  <h1>Meals</h1>
+  </br>
+  Add your meals below.
+  ${meals}`;
 };
-
-const renderButton = (name) => {
-  const button = document.createElement("button");
-  const text = document.createTextNode(name);
-  const wrapper = document.getElementById("grid-wrapper");
-  button.appendChild(text);
-  wrapper.appendChild(button);
-};
-
-renderButtons();

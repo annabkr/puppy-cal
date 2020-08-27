@@ -4,8 +4,9 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #268d52;
+  background-color: #ffbe76;
 }
 
 .grid-wrapper {
@@ -20,6 +21,18 @@ body {
   min-width: 50rem;
 }
 
+.meals-eaten {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.meal-adder {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
 header {
   display: grid;
   grid-row: 1/2;
@@ -31,26 +44,39 @@ button {
   padding: 15px 32px;
   font-size: 25px;
   color: white;
-  background-color: #268d52;
-  border: 2px solid #268d52;
+  background-color: #8854d0;
+  border: 2px solid #a55eea;
   border-radius: 2rem;
 }
 
 button:hover {
   background-color: #28a85f;
-  border: 2px solid #28a85f;
+  border: 2px solid #20bf6b;
 }
 
-.content {
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
   grid-row: 2/5;
   grid-column: 2/4;
   color: black;
-  background-color: #deeadf;
+  background-color: #f7f1e3;
   border-radius: 1rem;
-  justify-content: center;
 }
 
 h1 {
-  color: #268d52;
+  display: flex;
+  justify-content: center;
+  color: #8854d0;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  max-width: 350px;
 }
