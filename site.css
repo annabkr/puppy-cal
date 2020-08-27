@@ -27,10 +27,6 @@ header {
   justify-content: center;
 }
 
-h1 {
-  color: #268d52;
-}
-
 button {
   padding: 15px 32px;
   font-size: 25px;
@@ -53,4 +49,8 @@ button:hover {
   background-color: #deeadf;
   border-radius: 1rem;
   justify-content: center;
+}
+
+h1 {
+  color: #268d52;
 }
